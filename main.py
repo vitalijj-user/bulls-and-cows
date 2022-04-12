@@ -1,4 +1,6 @@
-from mastermind_engine import report_count, number_correct
+from mastermind_engine import report_count, number_correct, bull_cow_count
+
+
 
 
 while True:
@@ -8,7 +10,8 @@ while True:
             print("Ура, ви вгадали це число за {} спроб".format(report_count()))
             break
         else:
-            print("")
+            print("Биків", bull_cow_count())
+            print("Корыв", bull_cow_count())
     else:
         print("Ви ввели не коректне число")
 
